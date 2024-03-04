@@ -54,7 +54,7 @@ while userInput!='quit':
     run = client.beta.threads.runs.create(
         thread_id=thread.id,
         assistant_id=assistantId[0],
-        instructions="Please address the user as Jane Doe. The user has a premium account."
+        instructions="Please address the user as Jane Doe. The user has a premium account.Always keep EMAIL and SMS as primary channels of communication and stick to character limit"
     )
     while run.status!='completed':
         run = client.beta.threads.runs.retrieve(
