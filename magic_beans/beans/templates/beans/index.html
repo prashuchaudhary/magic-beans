@@ -3228,7 +3228,7 @@ $( document).ready(function() {
             success: function (response) {
                 var content = response.message;
                 content = content.replace(/^"(.*)"$/, '$1');
-                content = '<br/>'.join(content.splitlines());
+                content = content.split(/\r?\n/).join('<br/>');
                 var resonseDiv = responseDivStart + content + responseDivEnd;
                 $('#message-box').append(resonseDiv);
             }
