@@ -3229,7 +3229,7 @@ $( document).ready(function() {
                 var content = response.message;
                 content = content.replace(/^"(.*)"$/, '$1');
                 content = '<br/>'.join(content.splitlines());
-                var resonseDiv = responseDivStart + content.replace(/^"(.*)"$/, '$1') + responseDivEnd;
+                var resonseDiv = responseDivStart + content + responseDivEnd;
                 $('#message-box').append(resonseDiv);
             }
         });
