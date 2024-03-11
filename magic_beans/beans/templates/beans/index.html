@@ -3130,11 +3130,14 @@ $( document).ready(function() {
     });
 
     $("#send-button").click(function() {
+         $('#craft-box').addClass("hidden");
          $.ajax({
-            url: 'controller/addBookmark',
-            type: 'POST',
-            data: {'submit':true},
+            url: '/beans/magic',
+            type: 'GET',
+            data: {'query': $('#magic-query').val()},
             success: function (result) {
+                $('#message-box').removeClass("hidden");
+                $('#message-box').addClass("show");
               alert("Your bookmark has been saved");
             }
         });
@@ -3969,7 +3972,7 @@ $( document).ready(function() {
         </svg>
       </i>
     </div>
-    <div class="ant-row cap-row-v2 slidebox-content-container content-2121">
+    <div class="ant-row cap-row-v2 slidebox-content-container content-2121" id="craft-box">
         <div class="display-flex aira-icon">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="32" height="32" rx="16" fill="#04265E"/>
@@ -4033,11 +4036,14 @@ $( document).ready(function() {
             </span>
         </div>
     </div>
+    <div class="ant-row cap-row-v2 slidebox-content-container hidden" id="message-box">
+
+    </div>
     <div class="slidebox-content-container">
       <div>
         <div data-show="true" class="ant-alert ant-alert-info cap-alert-v2" style="margin-top: 0.857rem; margin-bottom: 0.857rem;">
             <span class="ant-input-affix-wrapper ant-input-affix-wrapper-lg">
-                <input placeholder="Ask Aira to generate Content" maxlength="160" type="text" class="ant-input ant-input-lg" value="">
+                <input id="magic-query" placeholder="Ask Aira to generate Content" maxlength="160" type="text" class="ant-input ant-input-lg" value="">
                 <div class="ant-input-suffix send-icon" id="send-button">
                     <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
