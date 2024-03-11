@@ -6,9 +6,7 @@ About Vishal Mega Mart
 Vishal Mega Mart (VMM) is India’s leading Fashion led hypermarket with 550+ stores spread across India. Vishal Mega Mart’s mission is to make aspirations affordable for all its customers by providing shoppers with a wide range of Latest Fashion, General Merchandise and Grocery needs. Vishal’s customers love its unique combination of great quality and amazing prices.
 
 
-VMM’s voice and tone for communication
 
-Vishal Mega Mart's communication should embody a friendly and approachable voice, coupled with a positive and engaging tone. It should be confident, informative, and empathetic, while also reflecting the brand's dynamism and commitment to transparency and inclusivity. This communication style aims to build trust, connect with customers, and deliver value by providing clear, helpful, and engaging content that resonates with the target audience. VMM’s voice and tone can also be fine tuned by adhering to it’s brand personality, mission statement and values.
 
 
 VMM’s brand personality
@@ -25,8 +23,6 @@ Vishal Mega Mart's brand personality is likely characterized by traits such as:
 
 5. Value-driven: Emphasizing affordability and value for money, the brand is associated with smart shopping choices and budget-friendly options.
 
-In essence, Vishal Mega Mart's values, mission statement, and brand personality collectively reflect its commitment to delivering quality products, exceptional service, and value to its customers while upholding ethical standards and fostering a positive organizational culture.
-
 
 VMM’s mission statement
 
@@ -42,6 +38,18 @@ VMM’s values
 3. Innovation: The company strives to innovate continuously, both in terms of its product offerings and its operational processes. This commitment to innovation helps Vishal Mega Mart stay relevant in a competitive market and deliver value to its customers.
 
 4. Teamwork: Collaboration and teamwork are valued within the organization. Vishal Mega Mart recognizes that its employees are crucial to its success and fosters a supportive and inclusive work environment.
+
+In essence, Vishal Mega Mart's values, mission statement, and brand personality collectively reflect its commitment to delivering quality products, exceptional service, and value to its customers while upholding ethical standards and fostering a positive organizational culture.
+
+
+
+
+
+
+VMM’s voice and tone for communication
+
+Vishal Mega Mart's communication should embody a friendly and approachable voice, coupled with a positive and engaging tone. It should be confident, informative, and empathetic, while also reflecting the brand's dynamism and commitment to transparency and inclusivity. This communication style aims to build trust, connect with customers, and deliver value by providing clear, helpful, and engaging content that resonates with the target audience. VMM’s voice and tone can also be fine tuned by adhering to it’s brand personality, mission statement and values.
+
 
 
 Target audience
@@ -62,41 +70,90 @@ Vishal Mega Mart's target audience typically includes a broad spectrum of consum
 
 Overall, Vishal Mega Mart's target audience encompasses a diverse range of consumers who prioritize affordability, convenience, and value when making their purchasing decisions.
 
-For Promotinal Content/message Default channel : SMS and Email
-
-Promotinal Content/message Communication channels guidelines
 
 
-All content generated for VMM should maintain consistency across all channels to reinforce brand identity and build trust with the audience. Certain standards and guidelines should be followed for each channel while messages still convey the same values, tone and style regardless of the channel.
+
+Communication channels guidelines
+
+All content generated for VMM should maintain consistency across all channels to reinforce brand identity and build trust with the audience. Certain standards and guidelines should be followed for each channel while messages still convey the same values regardless of the channel.
+
+Deafult promotion / message / content channel  - SMS and Email.
+
+Use tags where possible.
 
 SMS:
+Following are the guidelines that should be followed for content generation for SMS channel
 
-1. Character length limit: 100 words
-
-2. Content generation guidelines: VMM’s content for SMS should not contain any emojis. Offer value with concise, personalized content, including clear calls-to-action. Provide easy opt-out options, and adhere to regulations. Continuously test and optimize message content for effectiveness while handling data securely.
+1. Character length limit: 200 characters
+2. Tone of communication: Friendly, Assertive, Sympathetic
+3. Include CTAs?: No
+4. Include emojis?: No
+5. Include T&C?: No
 
 Email:
+Following are the guidelines that should be followed for content generation for Email channel
 
-1. Subject line character length limit: 30-50 characters
-
-2. Email body character length limit: 600-800 characters
-
-3. Content generation guidelines: When generating content for emails, prioritize, clarity, and relevance. Use recognizable sender information, and craft compelling subject lines. Personalize content and ensure emails are concise and mobile-friendly. Include clear CTAs prompting desired actions, and segment your audience for targeted messaging. Test different elements for optimization and adhere to data protection regulations, offering unsubscribe options. Use visual elements like emojis that will enhance the appeal of templates and convey emotions effectively. Include optimized image/video/gif and other media that is the most relevant to the content and that might increase user engagement.
+1. Subject character length limit: 50 characters
+2. Email body character length limit: 800 characters 
+2. Tone of communication: Friendly, Assertive, Sympathetic
+3. Include CTAs?: Yes
+4. Include emojis?: Yes
+5. Include T&C?: Yes
 
 Push notification:
+Following are the guidelines that should be followed for content generation for Push notification channel
 
-1. Character length limit: 40-120 characters
-
-2. Content generation guidelines: When generating content for Push notifications, craft effective content, prioritize relevance, clarity, and personalization. Include clear CTAs for action. Communicate value clearly. Test different strategies for optimization and ensure compliance with regulations like GDPR. Use visual elements like emojis that will enhance the appeal of templates and convey emotions effectively. Additionally, personalize notifications based on user behavior or location for increased engagement. Incorporating visually appealing elements and offering opt-out options further enhance user experience and brand reputation. Include an optimized image that is the most relevant to the content and that might increase user engagement.
+1. Character length limit: 120 characters
+2. Tone of communication: Friendly, Humourous
+3. Include CTAs?: Yes
+4. Include emojis?: Yes
+5. Include T&C?: No
 
 
 WhatsApp:
+Following are the guidelines that should be followed for content generation for different types of templates for WhatsApp channel
+WhatsApp template category: Alert update
+1. Character length limit: 1024 characters
+2. Tone of communication: Friendly, Formal, Sincere, Neutral
+3. Include CTAs?: No
+4. Include emojis?: Yes
+5. Include T&C?: No
+WhatsApp template category: Account update
+1. Character length limit: 1024 characters
+2. Tone of communication: Formal, Sincere, Neutral
+3. Include CTAs?: No
+4. Include emojis?: Yes
+5. Include T&C?: No
+WhatsApp template category: Appointment update
+1. Character length limit: 1024 characters
+2. Tone of communication: Formal, Sincere, Neutral
+3. Include CTAs?: Yes
+4. Include emojis?: No
+5. Include T&C?: No
+WhatsApp template category: Payment update
+1. Character length limit: 1024 characters
+2. Tone of communication: Formal, Sincere, Neutral
+3. Include CTAs?: No
+4. Include emojis?: Yes
+5. Include T&C?: No
 
-1. Character length limit: 40-120 characters
+WhatsApp template category: Reservation update
+1. Character length limit: 1024 characters
+2. Tone of communication: Formal, Sincere, Neutral
+3. Include CTAs?: Yes
+4. Include emojis?: No
+5. Include T&C?: Yes
 
-2. Content generation guidelines: When generating content for WhatsApp communication, follow specific guidelines to ensure effectiveness. It's crucial to understand and adhere to WhatsApp's guidelines for template messages. These guidelines govern the types of messages that can be sent through WhatsApp's business API and help maintain a positive user experience.
+List of all tags  available -
+{{first_name}} ---> provides the first name of the customer
+{{last_name}} ----> provides the last name of the customer
+{{customer_mobile}} ---> provides the mobile number of the customer
+{{customer_email}} ----> provides the emailId pf the customer
+{{loyalty_points}} ----> detemplatizes to the loyalty points assigned for the customer
+{{offer_name}} ---> provides the name of promotional offer
+{{custom_field.country}} ---> country name of the customer
+{{voucher}} --> coupon name assigned to the customer
 
-Content for WhatsApp template messages should prioritize clarity, conciseness, and relevance. Ensure compliance with guidelines and character limits. Personalization is key to engaging recipients, so templates should be tailored to the recipient's context, such as their name or recent interactions.Including a clear call-to-action (CTA) prompts recipients to take the desired action, such as replying or clicking a link. Based on the context, include phone number and website link CTAs or some quick reply buttons. Use visual elements like emojis that will enhance the appeal of templates and convey emotions effectively. Compliance with WhatsApp's policies and regulations is paramount to maintain the integrity of the communication channel and avoid spammy or promotional content.
 
 
 Compliance and legal considerations

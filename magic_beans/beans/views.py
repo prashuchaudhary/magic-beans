@@ -20,20 +20,20 @@ def parse_retriever_input(params: Dict):
 module_dir = os.path.dirname(__file__) 
 file_path = os.path.join(module_dir, 'templates/beans/sample_vmm.txt')
 
-chat = ChatOpenAI(model="gpt-4-0125-preview", temperature=0.7)
+chat = ChatOpenAI(model="gpt-4-0125-preview", temperature=0.8)
 loader = TextLoader(file_path)
 data = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 all_splits = text_splitter.split_documents(data)
 embeddings = OpenAIEmbeddings()
 db = FAISS.from_documents(all_splits, embeddings)
-retriever = db.as_retriever(k=4)
+retriever = db.as_retriever(k=8)
 
 question_answering_prompt = ChatPromptTemplate.from_messages(
     [
         (
             "system",
-            "Answer the user's questions based on the below context:\n\n{context}",
+            "Answer the user's questions based on the below context, dont add own information, use default channel , follow guidelines:\n\n{context}",
         ),
         MessagesPlaceholder(variable_name="messages"),
     ]
@@ -65,6 +65,7 @@ def magic(request):
             "messages": chat_history.messages,
         }
     )
+    response = response.replace('**','')
     chat_history.add_ai_message(response)
     return JsonResponse({'message': response})
 
