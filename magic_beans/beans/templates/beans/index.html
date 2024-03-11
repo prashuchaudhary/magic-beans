@@ -3227,6 +3227,8 @@ $( document).ready(function() {
             data: {'query': $('#magic-query').val()},
             success: function (response) {
                 var content = response.message;
+                content = content.replace(/^"(.*)"$/, '$1');
+                content = '<br/>'.join(content.splitlines());
                 var resonseDiv = responseDivStart + content.replace(/^"(.*)"$/, '$1') + responseDivEnd;
                 $('#message-box').append(resonseDiv);
             }
