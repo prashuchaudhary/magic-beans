@@ -3213,6 +3213,7 @@ $( document).ready(function() {
             success: function (response) {
                 var content = response.message;
                 content = content.replace(/\n/g, '<br />');
+                content = content.replace(/\*\*/g, "<b>").replace(/\*\*/g, "</b>");
                 var resonseDiv = responseDivStart + content.replace(/^"(.*)"$/, '$1') + responseDivEnd;
                 $("#message-box").children().last().remove();
                 $('#message-box').append(resonseDiv);
