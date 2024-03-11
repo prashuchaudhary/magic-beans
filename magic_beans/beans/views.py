@@ -66,6 +66,5 @@ def magic(request):
         }
     )
     chat_history.add_ai_message(response)
-    print(response)
     return JsonResponse({'message': response})
 
