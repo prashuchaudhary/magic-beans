@@ -8,4 +8,5 @@ def index(request):
 
 def magic(request):
     query = request.POST.get("query")
-    return JsonResponse({'foo' : 'bar'})
+    return JsonResponse({'message': 'bar'})
+
