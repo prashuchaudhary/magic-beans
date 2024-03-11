@@ -1,5 +1,6 @@
 import sqlite3
 
+
 class SqliteUtil:
     assitantTableCreateSchema = """
         CREATE TABLE IF NOT EXISTS assistant_info (
@@ -16,7 +17,7 @@ class SqliteUtil:
 
     def connectTodb(self):
         if self.conn == None:
-            self.conn =  sqlite3.connect('magic_beans.db')
+            self.conn = sqlite3.connect('magic_beans.db')
 
     def createCurr(self):
         if self.curr == None:
@@ -26,7 +27,7 @@ class SqliteUtil:
         self.curr.close()
         self.conn.close()
         self.curr = None
-        self.conn= None
+        self.conn = None
 
     def createAssitantTable(self):
         self.connectTodb()
@@ -35,17 +36,16 @@ class SqliteUtil:
         self.conn.commit()
         self.closeConn()
 
-
-    def addNewAssistantToDb(self, orgId,orgName,assitant_id):
+    def addNewAssistantToDb(self, orgId, orgName, assitant_id):
         insetQuery = """ INSERT INTO assistant_info (org_id,org_name,assistant_id) VALUES (?,?,?)"""
         self.connectTodb()
         self.createCurr()
-        data = self.curr.execute(insetQuery,(orgId,orgName,assitant_id)).fetchall()
+        data = self.curr.execute(insetQuery, (orgId, orgName, assitant_id)).fetchall()
         self.conn.commit()
         self.closeConn()
         return data
 
-    def getAssistantIdForOrg(self,orgName):
+    def getAssistantIdForOrg(self, orgName):
         getQuery = """ select assistant_id from assistant_info where org_name like '{0}' """.format(orgName)
         self.connectTodb()
         self.createCurr()
@@ -53,7 +53,3 @@ class SqliteUtil:
         self.conn.commit()
         self.closeConn()
         return data
-
-
-
-        
