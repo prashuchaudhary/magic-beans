@@ -60,7 +60,7 @@ def index(request):
 def magic(request):
     global chat_history
     global retrieval_chain_with_only_answer
-    query ='hello' #request.POST.get("query")
+    query = request.GET.get("query")
     chat_history.add_user_message(query)
     response=retrieval_chain_with_only_answer.invoke(
         {
