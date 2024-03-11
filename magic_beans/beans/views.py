@@ -18,8 +18,7 @@ def parse_retriever_input(params: Dict):
 
 
 module_dir = os.path.dirname(__file__) 
-file_path = os.path.join(module_dir, 'templates/beans/sample_vmm.txt') 
-
+file_path = os.path.join(module_dir, 'templates/beans/sample_vmm.txt')
 
 chat = ChatOpenAI(model="gpt-4-0125-preview", temperature=0.7)
 loader = TextLoader(file_path)
@@ -41,7 +40,6 @@ question_answering_prompt = ChatPromptTemplate.from_messages(
 )
 
 document_chain = create_stuff_documents_chain(chat, question_answering_prompt)
-
 
 chat_history = ChatMessageHistory()
 
