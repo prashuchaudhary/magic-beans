@@ -2948,10 +2948,12 @@ textarea,
 }
 .isRGoo, .hxhEV {
     margin-top: 1.714rem;
+    font-family: Roboto;
 }
 .sc-hUMlYv {
     display: inline-block;
     margin: 0px 8px;
+    font-family: Roboto;
 }
 .lkXfId {
     display: flex;
@@ -2964,6 +2966,7 @@ textarea,
 }
 .bUWyul {
     font-size: 24px;
+    font-family: Roboto;
 }
 .cap-header-v2 .title-desc-container {
     flex: 1;
@@ -2971,6 +2974,7 @@ textarea,
 }
 .iHsssI {
     font-size: 24px;
+    font-family: Roboto;
     font-weight: 500;
     color: rgb(9, 30, 66);
     line-height: 32px;
@@ -3001,6 +3005,7 @@ textarea,
     padding: 0;
     display: flex;
     align-items: center;
+    font-family: Roboto;
 }
 .cap-slide-box-v2-container .slidebox-content-container {
     height: auto;
@@ -3019,6 +3024,7 @@ textarea,
     text-shadow: none;
     span {
         font-size: 12px;
+        font-family: Roboto;
     }
 }
 .pfafore-btn:hover {
@@ -3046,8 +3052,10 @@ textarea,
 }
 .aira-text {
     margin-left: .5rem;
+    font-family: Roboto;
 }
 .aira-text-2 {
+    font-family: Roboto;
     margin-left: 1rem;
     display: flex;
 }
@@ -3067,6 +3075,7 @@ textarea,
     display: flex;
 }
 .aira-item, .magic-item {
+    font-family: Roboto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -3077,8 +3086,12 @@ textarea,
         align-items: center;
         justify-content: center;
     }
+    svg {
+        min-width: 40px;
+    }
 }
 .message-text {
+    font-family: Roboto;
     font-size: 14px;
     padding: 0;
 }
@@ -3138,6 +3151,9 @@ textarea,
 </style><style type="text/css">.cap-timepicker-v2 .ant-time-picker-input{height:40px;padding:6px 11px}.cap-timepicker-v2 .ant-time-picker-clock-icon{color:#091e42}
 </style><style type="text/css">.campaign-duration .create-new-link.ant-anchor-wrapper .ant-anchor-link-title{font-size:12px;line-height:20px}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 
@@ -3178,12 +3194,40 @@ $( document).ready(function() {
             type: 'GET',
             data: {'query': $('#magic-query').val()},
             success: function (response) {
-                var resonseDiv = responseDivStart + response.message + responseDivEnd;
+                var content = response.message;
+                var resonseDiv = responseDivStart + content.replace(/^"(.*)"$/, '$1') + responseDivEnd;
                 $('#message-box').append(resonseDiv);
             }
         });
-            $('#magic-query').val('');
+        $('#magic-query').val('');
     });
+
+    $('#send-button').keypress(function (e) {
+     var key = e.which;
+     if (key == 13) {
+                 $('#craft-box').addClass("hidden");
+         $("#slide-box").removeClass("space-between");
+
+         $('#message-box').removeClass("hidden");
+         $('#message-box').addClass("show");
+
+         var queryDiv = queryDivStart + $('#magic-query').val() + queryDivEnd;
+         $('#message-box').append(queryDiv);
+
+         $.ajax({
+            url: '/beans/magic',
+            type: 'GET',
+            data: {'query': $('#magic-query').val()},
+            success: function (response) {
+                var content = response.message;
+                var resonseDiv = responseDivStart + content.replace(/^"(.*)"$/, '$1') + responseDivEnd;
+                $('#message-box').append(resonseDiv);
+            }
+        });
+        $('#magic-query').val('');
+     }
+    });
+
 });
 </script>
 </head>
